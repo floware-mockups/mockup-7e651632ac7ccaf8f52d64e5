@@ -1,0 +1,328 @@
+{
+  "title": "Inventario e verifiche degli immobili",
+  "description": "Prototipo navigabile per consultare gli immobili comunali inventati, seguire le scadenze delle verifiche periodiche e registrare gli interventi.",
+  "accent": "indigo",
+  "pages": [
+    {
+      "id": "dashboard",
+      "title": "Quadro generale",
+      "description": "Riepilogo delle verifiche programmate e degli immobili inventati gestiti.",
+      "metrics": [
+        {
+          "label": "Immobili censiti",
+          "value": "6"
+        },
+        {
+          "label": "Verifiche in scadenza",
+          "value": "3"
+        },
+        {
+          "label": "Verifiche scadute",
+          "value": "1"
+        },
+        {
+          "label": "Interventi registrati",
+          "value": "4"
+        }
+      ],
+      "columns": [
+        "Ambito",
+        "Immobili",
+        "Prossima scadenza",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Antincendio",
+          "2",
+          "12/06/2026",
+          "In programma"
+        ],
+        [
+          "Ascensori",
+          "2",
+          "18/06/2026",
+          "In programma"
+        ],
+        [
+          "Impianti elettrici",
+          "2",
+          "22/06/2026",
+          "In programma"
+        ],
+        [
+          "Antincendio",
+          "1",
+          "20/05/2026",
+          "Scaduta"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "immobili",
+      "title": "Immobili",
+      "description": "Elenco filtrabile degli immobili e delle relative verifiche periodiche.",
+      "metrics": [
+        {
+          "label": "Immobili censiti",
+          "value": "6"
+        }
+      ],
+      "columns": [
+        "Codice immobile",
+        "Nome",
+        "Tipologia",
+        "Verifica",
+        "Ultima verifica",
+        "Prossima scadenza",
+        "Stato",
+        "Referente tecnico"
+      ],
+      "rows": [
+        [
+          "IMM-001",
+          "Scuola Lumo",
+          "Scuola",
+          "Antincendio",
+          "12/06/2025",
+          "12/06/2026",
+          "In programma",
+          "Rete Vela"
+        ],
+        [
+          "IMM-001",
+          "Scuola Lumo",
+          "Scuola",
+          "Impianti elettrici",
+          "22/06/2025",
+          "22/06/2026",
+          "In programma",
+          "Quadra Nubi"
+        ],
+        [
+          "IMM-002",
+          "Palestra Vela",
+          "Palestra",
+          "Antincendio",
+          "03/06/2025",
+          "12/06/2026",
+          "In programma",
+          "Rete Vela"
+        ],
+        [
+          "IMM-003",
+          "Magazzino Nubi",
+          "Magazzino",
+          "Impianti elettrici",
+          "18/06/2025",
+          "22/06/2026",
+          "In programma",
+          "Quadra Nubi"
+        ],
+        [
+          "IMM-004",
+          "Scuola Sera",
+          "Scuola",
+          "Ascensori",
+          "18/06/2025",
+          "18/06/2026",
+          "In programma",
+          "Elevia Lumo"
+        ],
+        [
+          "IMM-005",
+          "Palestra Zefiro",
+          "Palestra",
+          "Antincendio",
+          "20/05/2025",
+          "20/05/2026",
+          "Scaduta",
+          "Rete Vela"
+        ],
+        [
+          "IMM-006",
+          "Magazzino Brina",
+          "Magazzino",
+          "Ascensori",
+          "01/07/2025",
+          "01/07/2026",
+          "Pianificata",
+          "Elevia Lumo"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "scadenze",
+      "title": "Scadenze verifiche",
+      "description": "Verifiche ordinate per data; ricerca e filtri consentono di individuare rapidamente quelle imminenti o scadute.",
+      "metrics": [
+        {
+          "label": "Scadenze mostrate",
+          "value": "7"
+        },
+        {
+          "label": "Scadute",
+          "value": "1"
+        }
+      ],
+      "columns": [
+        "Data scadenza",
+        "Codice immobile",
+        "Immobile",
+        "Verifica",
+        "Ultima verifica",
+        "Stato",
+        "Fornitore tecnico",
+        "Note operative"
+      ],
+      "rows": [
+        [
+          "20/05/2026",
+          "IMM-005",
+          "Palestra Zefiro",
+          "Antincendio",
+          "20/05/2025",
+          "Scaduta",
+          "Rete Vela",
+          "Riprogrammare il controllo"
+        ],
+        [
+          "12/06/2026",
+          "IMM-001",
+          "Scuola Lumo",
+          "Antincendio",
+          "12/06/2025",
+          "In programma",
+          "Rete Vela",
+          "Verificare disponibilità"
+        ],
+        [
+          "12/06/2026",
+          "IMM-002",
+          "Palestra Vela",
+          "Antincendio",
+          "03/06/2025",
+          "In programma",
+          "Rete Vela",
+          "Controllo periodico"
+        ],
+        [
+          "18/06/2026",
+          "IMM-004",
+          "Scuola Sera",
+          "Ascensori",
+          "18/06/2025",
+          "In programma",
+          "Elevia Lumo",
+          "Controllo periodico"
+        ],
+        [
+          "22/06/2026",
+          "IMM-001",
+          "Scuola Lumo",
+          "Impianti elettrici",
+          "22/06/2025",
+          "In programma",
+          "Quadra Nubi",
+          "Prova impianto"
+        ],
+        [
+          "22/06/2026",
+          "IMM-003",
+          "Magazzino Nubi",
+          "Impianti elettrici",
+          "18/06/2025",
+          "In programma",
+          "Quadra Nubi",
+          "Prova impianto"
+        ],
+        [
+          "01/07/2026",
+          "IMM-006",
+          "Magazzino Brina",
+          "Ascensori",
+          "01/07/2025",
+          "Pianificata",
+          "Elevia Lumo",
+          "Controllo periodico"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "interventi",
+      "title": "Registro interventi",
+      "description": "Registra l'esito delle verifiche e degli interventi eseguiti sugli immobili.",
+      "metrics": [
+        {
+          "label": "Interventi registrati",
+          "value": "4"
+        }
+      ],
+      "columns": [
+        "Codice immobile",
+        "Immobile",
+        "Verifica",
+        "Data intervento",
+        "Stato",
+        "Fornitore tecnico",
+        "Esito",
+        "Note"
+      ],
+      "rows": [
+        [
+          "IMM-001",
+          "Scuola Lumo",
+          "Antincendio",
+          "12/06/2025",
+          "Completato",
+          "Rete Vela",
+          "Regolare",
+          "Controllo periodico concluso"
+        ],
+        [
+          "IMM-001",
+          "Scuola Lumo",
+          "Impianti elettrici",
+          "22/06/2025",
+          "Completato",
+          "Quadra Nubi",
+          "Regolare",
+          "Prova impianto conclusa"
+        ],
+        [
+          "IMM-004",
+          "Scuola Sera",
+          "Ascensori",
+          "18/06/2025",
+          "Completato",
+          "Elevia Lumo",
+          "Regolare",
+          "Controllo periodico concluso"
+        ],
+        [
+          "IMM-005",
+          "Palestra Zefiro",
+          "Antincendio",
+          "20/05/2025",
+          "Completato",
+          "Rete Vela",
+          "Da riprogrammare",
+          "Esito da verificare"
+        ]
+      ],
+      "form": [
+        "Codice immobile",
+        "Immobile",
+        "Verifica",
+        "Data intervento",
+        "Stato",
+        "Fornitore tecnico",
+        "Esito",
+        "Note"
+      ]
+    }
+  ]
+}
